@@ -24,13 +24,12 @@ export const VideoJS = ( props ) => {
       // player.autoplay(options.autoplay);
       // player.src(options.sources);
     }
-  }, [options, videoRef]);
+  }, [onReady, options, videoRef]);
 
   // Dispose the Video.js player when the functional component unmounts
   React.useEffect(() => {
-    const player = playerRef.current;
-
     return () => {
+      const player = playerRef.current;
       if (player) {
         player.dispose();
         playerRef.current = null;

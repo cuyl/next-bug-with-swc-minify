@@ -1,4 +1,4 @@
-import { useRef} from 'react'
+import { useRef } from 'react'
 import styles from '../styles/Home.module.css'
 import VideoJS from '../components/VideoJS'
 
